@@ -1,7 +1,7 @@
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         for i in range(len(nums) - 1):
-            for k in range(1, len(nums) - i):          #starts with 1 to avoid adding the same element twice
+            for k in range(i + 1, len(nums) - i):      #starts with i + 1 to avoid adding the same element twice
                 if nums[i] + nums[i + k] == target:    #checks all pairs with two for loops
                     return [i, i + k]
         return []
