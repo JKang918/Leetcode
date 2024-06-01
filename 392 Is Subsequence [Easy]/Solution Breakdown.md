@@ -20,7 +20,7 @@ def isSubsequence(s: str, t: str) -> bool:
 ```
 ### Breakdown of Solution:
 
-**two pointer**
+**Two Pointers**
 
 This problem is easily solved using two pointers.
 
