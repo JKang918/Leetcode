@@ -38,7 +38,7 @@ At ith iteration, if there is j such that prefix sum at j is 'curr - k', the sub
 
 One thing to take note of is the initialization of 'count' dictionalry: 
   count[0] = 1
-This can be easily understood thinking of situtation when the prefix, 'curr' itself is 'k'. Then there is only subarray at ith iteration that meets the condition, nums[0:i] so the ans should be added by 1. This is possible only when the dictionary is initialized as above. 
+This can be easily understood thinking of situtation when the prefix, 'curr' itself is 'k'. Then there is only subarray at ith iteration that meets the condition, nums[0:i] so the ans should be added by 1. This is possible only when the dictionary is initialized as above. Because 'curr - k' is zero and count.get(curr- k, 0) should be 1. 
 
 ### Complexity Analysis:
 
