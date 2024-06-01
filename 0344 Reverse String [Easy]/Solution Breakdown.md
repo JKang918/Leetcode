@@ -8,7 +8,7 @@ You must do this by modifying the input array in-place with O(1) extra memory.
 ### Solution: 
 
 ```python
-def reverseString(self, s: list[str]) -> None:
+def reverseString(s: list[str]) -> None:
     """
     Do not return anything, modify s in-place instead.
     """
