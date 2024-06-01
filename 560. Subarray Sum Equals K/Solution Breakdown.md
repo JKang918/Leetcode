@@ -28,13 +28,13 @@ def subarraySum(nums: list[int], k: int) -> int:
 
 ***ith iteration***
 
-| index          | 0       | 1       | ... | `j`       | j + 1     | ... | `i`       | ... | len(nums) - 1       |
+| index          | 0       | 1       | ... | `j`       | j + 1     | ... | `i`       | ... | n - 1       |
 |:--------------:|:-------:|:-------:|:---:|:-------:|:---------:|:---:|:-------:|:---:|:-------------------:|
-| array elements | nums[0] | nums[1] |     | nums[j] | nums[j+1] |     | nums[i] |     | nums[len(nums)] - 1 |
+| array elements | nums[0] | nums[1] |     | nums[j] | nums[j+1] |     | nums[i] |     | nums[n - 1] |
 | prefix sum     | ..      | ..      | ..  | `curr - k`       | ..        | ..  | `curr`    | ..  | sum(nums)   
 
 \
-At ith iteration, if there is j such that prefix sum at j is 'curr - k', the subarray from 'j+1' to 'i' (inclusive of both ends) is the subarray that satisfies the condition. Since all the possible 'j's has been counted in the previous iterations, we can call the total count of 'j's using .get method. The total count of possible 'j's is the number of subarrays satisfying the condition at ith iteration.\
+At ith iteration, if there is j such that prefix sum at j is 'curr - k', the subarray from 'j+1' to 'i' (inclusive of both ends) is the subarray that satisfies the condition. Since all the possible 'j's has been counted in the previous iterations, we can call the total count of 'j's using .get method. The total count of possible 'j's is the number of subarrays satisfying the condition at ith iteration.
 
 One thing to take note of is the initialization of 'count' dictionalry: 
   count[0] = 1
