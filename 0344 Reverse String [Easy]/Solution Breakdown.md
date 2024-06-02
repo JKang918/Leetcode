@@ -17,7 +17,7 @@ def reverseString(s: list[str]) -> None:
     right = len(s) - 1
     
     while left < right: 
-        #swap the values
+        #swap the chrarcters
         s[left], s[right] = s[right], s[left]
 
         left  += 1
