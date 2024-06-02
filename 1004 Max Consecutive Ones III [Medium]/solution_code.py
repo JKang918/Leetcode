@@ -1,4 +1,4 @@
-def longestOnes(self, nums: list[int], k: int) -> int:
+def longestOnes(nums: list[int], k: int) -> int:
     
     zerocount = 0 
     sublength = 0

@@ -12,7 +12,7 @@ Constraints:
 ### Solution: 
 
 ```python
-def longestOnes(self, nums: list[int], k: int) -> int:
+def longestOnes(nums: list[int], k: int) -> int:
     
     zerocount = 0 #to count the number of 0s in the subarray
     sublength = 0 #output value: length of the valid, logest subarray
