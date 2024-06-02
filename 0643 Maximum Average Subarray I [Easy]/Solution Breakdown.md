@@ -8,8 +8,8 @@ Find a contiguous subarray whose length is equal to `k` that has the maximum ave
 Constraints:
 
 - `n == nums.length`
-- `1 <= k <= n <= 10<sup>5</sup>`
-- `-104 <= nums[i] <= 10<sup>4</sup>`
+- <code>1 <= k <= n <= 10<sup>5</sup></code>
+- <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code> 
 
 ### Solution: 
 
