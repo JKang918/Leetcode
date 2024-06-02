@@ -5,7 +5,7 @@ Given a binary array `nums` and an integer `k`, return the maximum number of con
 
 Constraints:
 
-- `1 <= nums.length <= 10<sup>5</sup>`
+- <code>1 <= nums.length <= 10<sup>5</sup></code> 
 - `nums[i]` is either `0` or `1`.
 - `0 <= k <= nums.length`
 
