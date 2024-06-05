@@ -8,7 +8,8 @@ Return *the **maximum** value of* `nums[i] + nums[j]` *that you can obtain over 
 Constraints:
 
 - <code>1 <= nums.length <= 10<sup>5</sup></code> 
-- <code>1 <= nums[i] <= 10<sup>9</sup>/code> 
+- <code>1 <= nums[i] <= 10<sup>9</sup>/<code> 
+
 
 ### Solution: 
 
@@ -35,6 +36,7 @@ def maximumSum(nums: list[int]) -> int:
     
     return ans
 ```
+
 ### Breakdown of Solution:
 
 **Hash table**
