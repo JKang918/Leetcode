@@ -7,7 +7,7 @@ Return *the **minimum** number of **consecutive** cards you have to pick up to h
 Constraints:
 
 - <code>1 <= cards.length <= 10<sup>5</sup></code> 
-- <code>0 <= cards[i] <= 10<sup>6</sup>/code> 
+- <code>0 <= cards[i] <= 10<sup>6</sup>/</code> 
 
 ### Solution: 
 
