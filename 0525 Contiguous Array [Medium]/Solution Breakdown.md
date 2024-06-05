@@ -46,11 +46,11 @@ This is expressed in the third row.
 Note that the marginal cumulative sum is zero when the exactly same number of `-1`s and `1`s are added.\
 For example, prefix of index 6 and index 2 are same. Meaning, `[nums[3], ... , nums[6]]` is one the subarrays we are looking for.
 
-In other words, by subtracting the smaller index from the larget index with the same prefix (= `i - count[prefix]`) gives you the length of the subarray.
+In other words, by subtracting the smaller index from the larget index with the same prefix (= 6 - 2 = `i - count[prefix]`) gives you the length of the subarray.
 
 `count` dictionary is to store this information, prefix for key, index information for values.
 
-One adjusted ment to make is `count[0] = -1`.\
+One adjustment to make is `count[0] = -1`.\
 When the prefix of 0 means the length of valid subarray is itself.\
 
 For example, for index 7, the prefix is 0, the length of the valid subarray should be 8, from the 1st element to the 8th element.\
