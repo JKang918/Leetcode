@@ -38,10 +38,10 @@ For the same identifer, group all anagrams into a list and store this as diction
 
 ### Complexity Analysis:
 
-Time Complexity: *O(n)*
+Time Complexity: *O(n*m)*
 
-- iteration of `str`
+- iteration of `str`, with `m` being the avg len of each string
 
-Space Complexity: *O(n)*
+Space Complexity: *O(n * m * log(m))*
 
-- storing `lettdict`
+- storing `lettdict` costs n*m, sorting log(m)
