@@ -50,12 +50,23 @@ And then, update dictionary value if `nums[i]` is greater than the preexisting v
 
 While I used while loop to compute the sum of digits, but I found a clever way to get around this in here: [solution submitted by https://leetcode.com/u/akaghosting/](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/solutions/2292641/python-java-easy-solution/)
 
-I modified the above to fit my variable names. Substitute below for line 23 to line 28 and it would work.
+I modified the above to fit my variable names. Substitute below for the existing code block and it would work.
 
 ```python
 #....   
         #sod being sum of digits
         sod = sum(int(digits) for digits in str(nums[i]))
+
+        #replace this
+        """
+        #sod being sum of digits
+        sod = 0
+        k = 0
+        while nums[i]//(10**k) >= 10:
+            sod += (nums[i]//(10**k)) % 10
+            k += 1
+        sod += (nums[i]//(10**k))
+        """
 #....
 ```
 
