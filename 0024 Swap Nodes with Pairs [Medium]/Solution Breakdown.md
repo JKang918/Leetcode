@@ -58,6 +58,7 @@ At the beginning of the third iteration:
 
 And so forth.
 
+Lastly, return `start` because the result has to show the whole linked list starting ListNode(2).
 
 ### Complexity Analysis:
 
