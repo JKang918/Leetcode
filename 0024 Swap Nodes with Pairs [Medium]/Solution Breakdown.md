@@ -47,6 +47,16 @@ def swapPairs(head: ListNode) -> ListNode:
 - Note that `if not head or not head.next:` block. It is essential to prevent runtime error.
 - Note `if prev: prev.next = curr.next: prev.next = curr.next` block. This is run starting the second iteration. Check out the above schematics to figure why it is essential.
 
+In the second iteration:
+
+1. ListNode(4).next will be pointing ListNode(3) <== `curr.next.next = curr`
+2. ListNode(3).next will be pointing ListNode(5) <== `curr.next = temp`
+
+At the beginning of the third iteration:
+
+3. ListNode(3).next will be pointing ListNode(6) <== `prev.next = curr.next`
+
+And so forth.
 
 
 ### Complexity Analysis:
