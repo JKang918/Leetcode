@@ -42,16 +42,16 @@ Note:
 
 So taking a square of each element and sorting it can be said to be a trivial solution and inefficient as well.
 
-Instead, we take the two pointers approach.\
-Break apart the given array into two parts: negative part and positive part. And it can be seen that the elements with greatest absolute values are located in both ends. We compare these elemnts and plug them in the output array in the reverse order so that the larger squared elements are located on the right (ascending order).
+Instead, we take the *two pointers* approach.\
+Break apart the given array into two parts: negative part and positive part. And it can be seen that the elements with greatest absolute values are located at both ends. We compare these elemnts and plug them in the output array in the reverse order so that the larger squared elements are located on the right (ascending order).
 
-There is no need to put the additional break condition, since the length of the output array is limited to nums.length in the first place. The for-loop ends before left becomes grater than right. 
+There is no need to put the additional break condition, since the length of the output array is limited to `nums.length` in the first place. The for-loop ends before `left` becomes grater than `right`. 
 
 ### Complexity Analysis:
 
 Time Complexity: *O(n)*
 
-- iterate nums
+- iterate `nums`
 
 Space Complexity: *O(n)* or *O(1)* 
 
