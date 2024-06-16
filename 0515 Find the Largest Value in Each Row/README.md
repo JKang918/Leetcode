@@ -78,7 +78,7 @@ Space Complexity: *O(n)*
 - for perfect binary tree, maximum space occupied would be n/2.
 
 
-
+---
 
 ### Solution 2 (Depth First Search): 
 
@@ -115,7 +115,7 @@ def largestValues(root: TreeNode) -> list[int]:
     
     return dfs(root, 0)
 ```
-### Breakdown of Solution 1:
+### Breakdown of Solution 2:
 
 **Depth First Search**
 
@@ -125,7 +125,7 @@ def largestValues(root: TreeNode) -> list[int]:
 - The first node with corresponding `depth` gets appended to the answer list.
 - If other nodes with corresponding `depth` have greater node values, the list is updated. 
 
-### Complexity Analysis (Solution 1):
+### Complexity Analysis (Solution 2):
 
 Time Complexity: *O(n)*
 
