@@ -6,6 +6,8 @@ A binary tree's **maximum depth** is the number of nodes along the longest path 
 
 **Example 1:**
 ![Example 1](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)
+
+
 **Input: root** = [3,9,20,null,null,15,7]\
 **Output**: 3
 
