@@ -17,7 +17,7 @@ A binary tree's **maximum depth** is the number of nodes along the longest path 
 **Output**: 2
  
 
-Constraints:
+**Constraints:**
 
 - The number of nodes in the tree will be in the range <code>[0, 10<sup>4</sup>]</code> .
 - <code>-10<sup>2</sup> <= Node.val <= 10<sup>2</sup></code> 
