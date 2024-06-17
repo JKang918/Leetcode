@@ -1,3 +1,5 @@
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -5,7 +7,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def deepestLeavesSum(self, root: TreeNode) -> int:   
+def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:   
     curr_depth = deepest_depth = 0
     deepest_sum = 0
     stack = [(root, 0)]

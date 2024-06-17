@@ -13,6 +13,7 @@ Constraints:
 ### Solution 1 (BFS): 
 
 ```python
+from typing import Optional
 from collections import deque
 
 # Definition for a binary tree node.
@@ -22,7 +23,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def deepestLeavesSum(root: TreeNode) -> int:
+def deepestLeavesSum(root: Optional[TreeNode]) -> int:
         next_level = deque()
         next_level.append(root)
 
@@ -68,6 +69,8 @@ Space Complexity: *O(n)*
 ### Solution 2 (DFS with iterative stack): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -75,9 +78,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def deepestLeavesSum(self, root: TreeNode) -> int:   
-    curr_depth = 0
-    deepest_depth = curr_depth
+def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:   
+    curr_depth = deepest_depth = 0
     deepest_sum = 0
     stack = [(root, 0)]
 
@@ -85,8 +87,7 @@ def deepestLeavesSum(self, root: TreeNode) -> int:
 
         node, curr_depth = stack.pop()
 
-        #Leaf node
-        if not node.right and not node.left: 
+        if not node.right and not node.left: #Leaf node
             #if leaf node's depth(curr_depth) is the newest record
             if deepest_depth < curr_depth:
                 deepest_depth = curr_depth #update deepest_depth
@@ -95,8 +96,7 @@ def deepestLeavesSum(self, root: TreeNode) -> int:
             #if leaf node's depth(curr_depth) reaches the deepest_depth so far
             elif deepest_depth == curr_depth:
                 deepest_sum += node.val #add the value to the preexisting sum
-        
-        #non leaf case
+            
         else:
             if node.right:
                 stack.append((node.right, curr_depth + 1))
@@ -104,7 +104,6 @@ def deepestLeavesSum(self, root: TreeNode) -> int:
                 stack.append((node.left, curr_depth + 1))
     
     return deepest_sum
-        
 ```
 ### Breakdown of Solution 2:
 

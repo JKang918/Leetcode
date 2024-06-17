@@ -12,6 +12,7 @@ Constraints:
 ### Solution: 
 
 ```python
+from typing import Optional
 from collections import deque
 
 # Definition for a binary tree node.
@@ -21,7 +22,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def rightSideView(root: TreeNode) -> list[int]:
+def rightSideView(root: Optional[TreeNode]) -> list[int]:
     #If empty node
     if not root: return []
     #Otherwise: nonempty cases

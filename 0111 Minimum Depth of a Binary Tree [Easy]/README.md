@@ -13,6 +13,8 @@ The minimum depth is the number of nodes along the shortest path from the root n
 ### Solution (DFS with recursion): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 # Definition for a binary tree node.
 class TreeNode:
@@ -21,7 +23,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def minDepth(root: TreeNode) -> int:
+def minDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     

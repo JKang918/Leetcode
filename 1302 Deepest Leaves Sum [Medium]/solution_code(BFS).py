@@ -1,3 +1,4 @@
+from typing import Optional
 from collections import deque
 
 # Definition for a binary tree node.
@@ -7,7 +8,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def deepestLeavesSum(root: TreeNode) -> int:
+def deepestLeavesSum(root: Optional[TreeNode]) -> int:
         next_level = deque()
         next_level.append(root)
 

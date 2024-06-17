@@ -13,6 +13,8 @@ Constraints:
 ### Solution 1 (DFS with recursion): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val= 0, left=None, right=None):
@@ -20,10 +22,10 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def hasPathSum(root: TreeNode, targetSum: int) -> bool:
+def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
 
         if not root: return False
-
+        
         #Base case
         if not root.left and not root.right:
             return root.val == targetSum
@@ -31,8 +33,7 @@ def hasPathSum(root: TreeNode, targetSum: int) -> bool:
         left = hasPathSum(root.left, targetSum - root.val)
         right = hasPathSum(root.right, targetSum - root.val)
 
-        return left or right
-        
+        return left or right  
 ```
 ### Breakdown of Solution 1:
 
@@ -64,14 +65,16 @@ Space Complexity: *O(log(n))*
 ### Solution 2 (DFS with iterative stack): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val= 0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-def hasPathSum(root: TreeNode, targetSum: int) -> bool:
+def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
 
     if not root: return False
     
@@ -88,7 +91,6 @@ def hasPathSum(root: TreeNode, targetSum: int) -> bool:
                 stack.append((node.right, cumulsum))
         if node.left:
                 stack.append((node.left, cumulsum))
-        
 ```
 ### Breakdown of Solution 2:
 
