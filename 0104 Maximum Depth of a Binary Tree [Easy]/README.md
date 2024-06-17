@@ -26,6 +26,8 @@ A binary tree's **maximum depth** is the number of nodes along the longest path 
 ### Solution 1 (DFS with recursion): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -33,7 +35,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def maxDepth(root: TreeNode) -> int:
+def maxDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
 
@@ -71,6 +73,8 @@ Space Complexity: *O(log(n))*
 ### Solution 2 (DFS with iterative stack): 
 
 ```python
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -78,7 +82,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def maxDepth(root: TreeNode) -> int:
+def maxDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
 
