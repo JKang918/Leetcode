@@ -77,9 +77,9 @@ Time Complexity: *O(m * n)*
 
 - check all verticies
 
-Space Complexity: *O(1)*
+Space Complexity: *O(m * n)*
 
-- constants
+- `seen` set
 
 ---
 
@@ -120,6 +120,6 @@ Time Complexity: *O(m * n)*
 
 - check all verticies
 
-Space Complexity: *O(1)*
+Space Complexity: *O(m * n)*
 
-- constants
+- `seen` set
