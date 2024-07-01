@@ -22,8 +22,8 @@ def longestCommonPrefix(self, strs: list[str]) -> str:
     #compare this to all the others starting with the second word
     for i in range(1, len(strs)):
         
-        #if the prefix exists in another word in a string list, then it will not be 0
-        #so being zero means it is not a common prefix
+        #if the prefix exists in another word in a string list, then it will 0
+        #because that phrase(prefix) if found at the beginning of the other word
         while strs[i].find(prefix) != 0:
 
             #because it is not a common prefix, let's reduce the given prefix by each letter at the end
