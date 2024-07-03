@@ -33,7 +33,7 @@ Constraints:
 - `nums` is sorted in non-decreasing order.
 
 
-### Solution: 
+### Solution 1: 
 
 ```python
 def removeDuplicates(nums: list[int]) -> int:
@@ -51,9 +51,10 @@ def removeDuplicates(nums: list[int]) -> int:
     
     return len(nums)
 ```
-### Breakdown of Solution:
 
-**Iteration**
+### Breakdown of Solution 1:
+
+**pop method**
 
 ```python
 ref = nums[0]
@@ -84,6 +85,49 @@ If not duplicate, then go on to the next element in the array and make it a new 
 
 At the end, you will end up with the array with distinct integers.\
 Return the length of that array.
+
+
+### Complexity Analysis:
+
+Time Complexity: *O(n^2)*
+
+- iterate the array
+- `pop` method is O(n) itself -> inefficiency
+
+Space Complexity: *O(1)*
+
+- only constants
+
+---
+
+### Solution 2: 
+
+```python
+def removeDuplicates(nums: list[int]) -> int:
+
+    #Two Pointers #Sliding Window
+    
+    i = 1
+    for j in range(1, len(nums)):
+        if nums[j - 1] != nums[j]:
+            nums[i] = nums[j]
+            i += 1
+    
+    return i
+```
+
+
+### Breakdown of Solution 2:
+
+**Two Pointers**
+
+We start with the second element and traverse the given array. See whether the element is duplicate with the preceding element.
+
+Whenever it is duplicate, sliding window opens up: `i` stays still with `j` increasing by one in the for loop.
+
+When the new distinct value shows up, update `nums[i]` with it.
+
+When the for loop ends, you end up with `nums[0] ... nums[i]` with distinct values. Return the number of distinct value, which is `i`.
 
 
 ### Complexity Analysis:
