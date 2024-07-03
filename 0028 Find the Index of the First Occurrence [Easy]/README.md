@@ -53,10 +53,10 @@ gives you the same result.
 
 ### Complexity Analysis:
 
-Time Complexity: *O(n)*
+Time Complexity: *O(nm)*
 
 - iterate the array
-- despite the nested for loop, each element iterates only onece (characteristic of sliding window algorithm)
+- iterate the window
 
 Space Complexity: *O(1)*
 
