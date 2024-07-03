@@ -29,7 +29,7 @@ If all assertions pass, then your solution will be accepted.
 
 Constraints:
 
-- <code>1 <= nums.length <= 100</sup></code>
+- <code>1 <= nums.length <= 100</code>
 - `0 <= nums[i] <= 50`
 - `0 <= val <= 100`
 
