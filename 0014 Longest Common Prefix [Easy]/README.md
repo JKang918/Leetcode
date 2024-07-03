@@ -40,8 +40,8 @@ def longestCommonPrefix(self, strs: list[str]) -> str:
 **Horizontal Search**
 
 1. Assume the first string as a whole as common prefix
-2. Check whether this is truly common prefix by comparing it with other strings in the list. If it's common, it should exist in the other strings. So `find` method should result in non-zero.
-3. Whenever the `find` method results in zero, slice the last letter of the prefix away and check whether this sliced prefix is common using `while` loop.
+2. Check whether this is truly common prefix by comparing it with other strings in the list. If it's common, it should exist in the other strings and the find method should result in zero.
+3. Whenever the `find` method results in non-zero (no common prefix), slice the last letter of the prefix away and check whether this sliced prefix is common using `while` loop.
 
 ### Complexity Analysis:
 
