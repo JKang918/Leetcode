@@ -69,6 +69,16 @@ That is because as in the case of binary tree, in graph problems, instead of get
 
 In the above code, that distance information is separtely stored in the `queue` along with grid information. Everytime node one distance greater is searched, `path + 1` is added to the deque. 
 
+```python
+            ##
+            if r == m - 1 and c == n - 1:
+                return path
+            ##
+```
+This part is implemented to stop the search when the search reaches the destination, bottom-rightmost grid.
+
+When all possible grids are searched but the bottom-rightmost grid is not reached (meaning, it is `1` so there is no clear path), then return `-1`.
+
 ### Complexity Analysis:
 
 Time Complexity: *O(m*n)*
