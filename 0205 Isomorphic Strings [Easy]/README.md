@@ -1,6 +1,6 @@
 ## 205. Isomorphic Strings
 
->Description: [141. Linked List Cycle](https://leetcode.com/problems/isomorphic-strings/description/)\
+>Description: [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)\
 Check out the link above.
 
 Constraints:
