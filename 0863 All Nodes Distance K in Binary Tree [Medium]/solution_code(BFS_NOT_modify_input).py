@@ -30,7 +30,7 @@ def distanceK(root: TreeNode, target: TreeNode, k: int) -> list[int]:
                 queue.append(node.right)
                 graph[node.val].append(node.right.val)
                 graph[node.right.val].append(node.val) #undirected
-    ###preprocessing end
+####################################
 
     queue = deque([target.val])
     seen = {target.val}
@@ -46,14 +46,5 @@ def distanceK(root: TreeNode, target: TreeNode, k: int) -> list[int]:
                     seen.add(neighbor)
                     queue.append(neighbor)
     ###end of the outer for loop: queue with k distance nodes
-    """
-    #get those in the answer array
-    #while queue:
-    #    ans.append(queue.popleft())
-
-    #return ans
-    """
-    #or simply
     
     return [node for node in queue]
-    
