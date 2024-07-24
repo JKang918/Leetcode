@@ -230,7 +230,7 @@ def findKthLargest(nums: List[int], k: int) -> int:
 
 **Quickselect Algorithm**
 
-The [leetcode editorial](https://leetcode.com/problems/kth-largest-element-in-an-array/editorial/) provides excellent explanation as to the underlying mechanism of quickselect algorithm.
+The [leetcode editorial](https://leetcode.com/problems/top-k-frequent-elements/editorial/) provides excellent explanation as to the underlying mechanism of quickselect algorithm.
 
 Here I explain mainly how each line works in the code implementation.
 
