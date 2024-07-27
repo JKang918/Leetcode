@@ -37,6 +37,8 @@ So while traversing the given array, if a certain element is below the starting 
 
 When an element finally comes along that goes beyond the limit, `(x, k)`, start a new substring. 
 
+The idea that doing something as much as possible at every step calls for greedy algorithm.
+
 ### Complexity Analysis:
 
 Time Complexity: *O(nlong(n))*
